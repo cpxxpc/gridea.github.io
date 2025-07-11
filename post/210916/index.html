@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>十五年 | CpxxpC</title>
+<link rel="shortcut icon" href="https://cpxxpc.top/favicon.ico?v=1752196374699">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cpxxpc.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="十五年 | CpxxpC - Atom Feed" href="https://cpxxpc.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="今天，是我与aya结婚15周年的纪念日，虽然近来身体有一些不适，多少会影响心情，而且我们工作日也都是早出晚归，没有更多的自由时间，但作为一个很有纪念意义的日子，这一天还是应该写点文字纪念一下的。
+
+回首五年前，在我们十周年结婚纪念日的时候，..." />
+    <meta name="keywords" content="纪念日,随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cpxxpc.top">
+  <img class="avatar" src="https://cpxxpc.top/images/avatar.png?v=1752196374699" alt="">
+  </a>
+  <h1 class="site-title">
+    CpxxpC
+  </h1>
+  <p class="site-description">
+    平平淡淡，简简单单
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://cpxxpc.top/post/250414" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              十五年
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-09-16
+              </span>
+              
+                <a href="https://cpxxpc.top/tag/ji-nian-ri/" class="post-tag">
+                  # 纪念日
+                </a>
+              
+                <a href="https://cpxxpc.top/tag/sui-bi/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>今天，是我与aya结婚15周年的纪念日，虽然近来身体有一些不适，多少会影响心情，而且我们工作日也都是早出晚归，没有更多的自由时间，但作为一个很有纪念意义的日子，这一天还是应该写点文字纪念一下的。</p>
+<!-- more -->
+<p>回首五年前，在我们十周年结婚纪念日的时候，我写过一篇“十年”，当时受腿痛等因素影响，心态也是比较低落的，转眼间又五年过去了，其实身心还是都调整了不少，只是由于不久前的变故，让身心再次受到了一次打击，现在的状况应该也算是余波未平吧！相信经过调整与疗慰，还是会慢慢走出来的…</p>
+<p>好了，不多说了，更多的抒情与感慨等到以后状态更好时再说吧！</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cpxxpc.top/post/210915/">
+              <h3 class="post-title">
+                午后散步
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">. Gridea</a>
+  <a class="rss" href="https://cpxxpc.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

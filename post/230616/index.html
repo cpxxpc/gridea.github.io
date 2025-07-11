@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>无题 | CpxxpC</title>
+<link rel="shortcut icon" href="https://cpxxpc.top/favicon.ico?v=1752196374699">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cpxxpc.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="无题 | CpxxpC - Atom Feed" href="https://cpxxpc.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="没想到立秋已过，在经历了多日较为凉爽的天气后，这几日再次恢复为闷热的“桑拿天”，好在，这种天气应该也持续不了多久，等到八月末九月初恢复上班、上学的时候，差不多也就该过去了。
+ 
+忽然想到，现在距离我们巴蜀之行的结束也过去快一个月了，而距离学..." />
+    <meta name="keywords" content="天气,随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cpxxpc.top">
+  <img class="avatar" src="https://cpxxpc.top/images/avatar.png?v=1752196374699" alt="">
+  </a>
+  <h1 class="site-title">
+    CpxxpC
+  </h1>
+  <p class="site-description">
+    平平淡淡，简简单单
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://cpxxpc.top/post/250414" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              无题
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-06-16
+              </span>
+              
+                <a href="https://cpxxpc.top/tag/tian-qi/" class="post-tag">
+                  # 天气
+                </a>
+              
+                <a href="https://cpxxpc.top/tag/sui-bi/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>没想到立秋已过，在经历了多日较为凉爽的天气后，这几日再次恢复为闷热的“桑拿天”，好在，这种天气应该也持续不了多久，等到八月末九月初恢复上班、上学的时候，差不多也就该过去了。</p>
+ <!-- more -->
+<p>忽然想到，现在距离我们巴蜀之行的结束也过去快一个月了，而距离学前周开始及nn升入中学也仅剩十天左右了。不知不觉中，这个暑假就已进入了尾声……</p>
+<p>好了，也就不多慨叹了，先写到这里吧！</p>
+<p>PS：本文原写于iReader Smart Air。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cpxxpc.top/post/230529/">
+              <h3 class="post-title">
+                无题
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">. Gridea</a>
+  <a class="rss" href="https://cpxxpc.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

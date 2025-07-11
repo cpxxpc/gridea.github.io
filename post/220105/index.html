@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>无题 | CpxxpC</title>
+<link rel="shortcut icon" href="https://cpxxpc.top/favicon.ico?v=1752196374699">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cpxxpc.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="无题 | CpxxpC - Atom Feed" href="https://cpxxpc.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="在昨天已经决心新年起所需少做与多做的诸事之后，由于原定承担笔记+微录+摘录任务的专注笔记+Migi笔记+Cubox中的重中之重专注笔记同步方面的不稳定性，以及始终对这种分散记录的状况感到不适应，还是决定再破例一次，在昨天一日之内完成了笔记类..." />
+    <meta name="keywords" content="软件,随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cpxxpc.top">
+  <img class="avatar" src="https://cpxxpc.top/images/avatar.png?v=1752196374699" alt="">
+  </a>
+  <h1 class="site-title">
+    CpxxpC
+  </h1>
+  <p class="site-description">
+    平平淡淡，简简单单
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://cpxxpc.top/post/250414" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              无题
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-01-05
+              </span>
+              
+                <a href="https://cpxxpc.top/tag/ruan-jian/" class="post-tag">
+                  # 软件
+                </a>
+              
+                <a href="https://cpxxpc.top/tag/sui-bi/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>在昨天已经决心新年起所需少做与多做的诸事之后，由于原定承担笔记+微录+摘录任务的专注笔记+Migi笔记+Cubox中的重中之重专注笔记同步方面的不稳定性，以及始终对这种分散记录的状况感到不适应，还是决定再破例一次，在昨天一日之内完成了笔记类全部内容向OneNote的迁移和整理，这样，原有的笔记、微录、摘录均集中于一处，虽然受限于OneNote的访问速度，但其稳定性与整合度是前面的组合所不具备的，而且借助365家庭版的廉价订阅及OneDrive的海量同步空间，完全可以长期放心的使用下去，目前看来，这算是各方面平衡度最好的一种选择了。</p>
+ <!-- more -->
+<p>下不为例，相信这次调整后，<strong>电子类内容稳定、长久、无值守的运行目标</strong>就基本已经达到了，那就别再做更多无谓的折腾了，OK！！！</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cpxxpc.top/post/220104/">
+              <h3 class="post-title">
+                新年新回归
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">. Gridea</a>
+  <a class="rss" href="https://cpxxpc.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

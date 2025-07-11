@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>印象智能笔 | CpxxpC</title>
+<link rel="shortcut icon" href="https://cpxxpc.top/favicon.ico?v=1752196374699">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cpxxpc.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="印象智能笔 | CpxxpC - Atom Feed" href="https://cpxxpc.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="昨天收到了印象笔记出品的智能笔等装备，准备重拾回书写的感觉，给自己创造一个静心静气记下每日所思所感的氛围。确实，从母亲去世以后，已经很久没有动笔写下什么东西了，这段时间经历了太多事，太多情感的升降起伏了，几个月来一直感觉心好累，有太多的情绪..." />
+    <meta name="keywords" content="电品,随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cpxxpc.top">
+  <img class="avatar" src="https://cpxxpc.top/images/avatar.png?v=1752196374699" alt="">
+  </a>
+  <h1 class="site-title">
+    CpxxpC
+  </h1>
+  <p class="site-description">
+    平平淡淡，简简单单
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://cpxxpc.top/post/250414" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              印象智能笔
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-27
+              </span>
+              
+                <a href="https://cpxxpc.top/tag/dian-pin/" class="post-tag">
+                  # 电品
+                </a>
+              
+                <a href="https://cpxxpc.top/tag/sui-bi/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>昨天收到了印象笔记出品的智能笔等装备，准备重拾回书写的感觉，给自己创造一个静心静气记下每日所思所感的氛围。确实，从母亲去世以后，已经很久没有动笔写下什么东西了，这段时间经历了太多事，太多情感的升降起伏了，几个月来一直感觉心好累，有太多的情绪与想法憋闷在心中不得释放，也许，把这些付诸笔端写下来是一种好的选择吧，我愿意为之一试。</p>
+<!-- more -->
+<p>但实际使用下来，也出现了一些阻碍——像长期不用笔写正式的文字导致用笔很不习惯；用惯键盘输入外加性格急躁导致书写的潦草杂乱…… 但我认为这些都不重要，重要的还是写下来，养成一种书写表达的习惯，其他的，就慢慢来吧！</p>
+<p>PS：本文原为使用印象智能笔写于纸本之上。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cpxxpc.top/post/210104/">
+              <h3 class="post-title">
+                新年新回归
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">. Gridea</a>
+  <a class="rss" href="https://cpxxpc.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

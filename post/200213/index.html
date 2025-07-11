@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>避疫 | CpxxpC</title>
+<link rel="shortcut icon" href="https://cpxxpc.top/favicon.ico?v=1752196374699">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cpxxpc.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="避疫 | CpxxpC - Atom Feed" href="https://cpxxpc.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="不知不觉间，成天无所事事，足不出户地在家避疫已经半个多月了。在这奇特的“无聊”与“充实”之间，也产生了一点感悟。
+
+其一，就是随着生活变得简单，更多地认清了生活中真正必不可少的、最基本的要素有哪些，正如aya所说，网购衣物（于我来说是电品）..." />
+    <meta name="keywords" content="疫情,随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://cpxxpc.top">
+  <img class="avatar" src="https://cpxxpc.top/images/avatar.png?v=1752196374699" alt="">
+  </a>
+  <h1 class="site-title">
+    CpxxpC
+  </h1>
+  <p class="site-description">
+    平平淡淡，简简单单
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://cpxxpc.top/post/250414" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              避疫
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-02-13
+              </span>
+              
+                <a href="https://cpxxpc.top/tag/yi-qing/" class="post-tag">
+                  # 疫情
+                </a>
+              
+                <a href="https://cpxxpc.top/tag/sui-bi/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>不知不觉间，成天无所事事，足不出户地在家避疫已经半个多月了。在这奇特的“无聊”与“充实”之间，也产生了一点感悟。</p>
+<!-- more -->
+<p>其一，就是随着生活变得简单，更多地认清了生活中真正必不可少的、最基本的要素有哪些，正如aya所说，网购衣物（于我来说是电品）、外出购物、走亲访友、外出游玩，乃至由此带来的对比心态等等都被主动或被动地舍弃，平日里被忙碌冲淡的家人相聚、交心畅谈、阅读积淀、亲制美食等无形中增多起来，甚至成为此期间的主打“项目”。待疫情过后，是否仍能尽量如此简单、直接地生活下去，希望这番“此消彼长”会带来一定启发吧！</p>
+<p>其二，放眼外界，平日“不作为”，疫情来后“乱作为”，对此，目前就不展开细述了…</p>
+<p>PS：本文原写于Boox Note2。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://cpxxpc.top/post/200205/">
+              <h3 class="post-title">
+                电品躁动
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">. Gridea</a>
+  <a class="rss" href="https://cpxxpc.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
